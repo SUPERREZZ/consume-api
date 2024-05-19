@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
             users.forEach(user => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${user.Id}</td>
                     <td>${user.Nama}</td>
                     <td>${user.Password}</td>
                     <td>${user.role}</td>
