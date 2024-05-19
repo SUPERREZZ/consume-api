@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     if (isListUsersPage) {
-        setInterval(fetchUsers, 4000);
+        fetchUsers()
+        setInterval(fetchUsers, 10000);
     }
 });
