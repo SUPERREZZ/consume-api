@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${user.Nama}</td>
                     <td>${user.Password}</td>
                     <td>${user.role}</td>
+                    <td>${user.Tanggal}</td>
                 `;
                 userTable.appendChild(row);
             });
