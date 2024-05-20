@@ -42,11 +42,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
             users.forEach(user => {
                 const row = document.createElement('tr');
+                const formattedDate = new Date(user.Tanggal).toLocaleString('id-ID', {
+                timeZone: 'Asia/Jakarta',
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+            });
                 row.innerHTML = `
                     <td>${user.Nama}</td>
                     <td>${user.Password}</td>
                     <td>${user.role}</td>
-                    <td>${user.Tanggal}</td>
+                    <td>${formattedDate}</td>
                 `;
                 userTable.appendChild(row);
             });
