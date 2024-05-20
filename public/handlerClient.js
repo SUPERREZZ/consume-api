@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const password = document.getElementById('password').value;
             const user = { "nama": nama, "role": role, "pass": password };
             try {
-                const response = await fetch('https://coba-fullstack.vercel.app/api/users', {
+                const response = await fetch('https://express-api-ten-lilac.vercel.app/api/users', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     async function fetchUsers() {
         try {
-            const response = await fetch('https://coba-fullstack.vercel.app/api/users');
+            const response = await fetch('https://express-api-ten-lilac.vercel.app/api/users');
             if (!response.ok) {
                 throw new Error('Failed to fetch users');
             }
